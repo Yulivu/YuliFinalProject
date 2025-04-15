@@ -1,16 +1,49 @@
-# 这是一个示例 Python 脚本。
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-# 按 Shift+F10 执行或将其替换为您的代码。
-# 按 双击 Shift 在所有地方搜索类、文件、工具窗口、操作和设置。
+"""
+基于机器学习的地震断层运动方式识别及其在板块边界判识中的应用
+主程序入口
+"""
+
+import os
+import sys
+import subprocess
 
 
-def print_hi(name):
-    # 在下面的代码行中使用断点来调试脚本。
-    print(f'Hi, {name}')  # 按 Ctrl+F8 切换断点。
+def main():
+    """主程序入口"""
+    print("========================================================")
+    print("基于机器学习的地震断层运动方式识别及其在板块边界判识中的应用")
+    print("========================================================")
+
+    # 获取项目根目录
+    project_root = os.path.dirname(os.path.abspath(__file__))
+
+    # 处理CMT地震目录数据
+    cmt_script_path = os.path.join(project_root, 'src', 'data', 'parse_cmt.py')
+    if os.path.exists(cmt_script_path):
+        print(f"\n1. 执行CMT地震目录处理脚本:")
+        subprocess.run([sys.executable, cmt_script_path])
+    else:
+        print(f"错误: 找不到CMT处理脚本: {cmt_script_path}")
+        print("请先创建CMT处理脚本")
+
+    # 处理板块边界数据
+    plates_script_path = os.path.join(project_root, 'src', 'data', 'parse_plates.py')
+    if os.path.exists(plates_script_path):
+        print(f"\n2. 执行板块边界数据处理脚本:")
+        subprocess.run([sys.executable, plates_script_path])
+    else:
+        print(f"错误: 找不到板块数据处理脚本: {plates_script_path}")
+        print("请先创建板块数据处理脚本")
+
+    print("\n数据处理完成！数据已保存到 data/processing/ 目录")
+    print("可视化结果保存在 data/explore/ 目录")
+
+    # 这里将来可以添加更多功能
+    # 如特征工程、模型训练等
 
 
-# 按装订区域中的绿色按钮以运行脚本。
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
+if __name__ == "__main__":
+    main()
