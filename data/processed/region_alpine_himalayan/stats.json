@@ -1,0 +1,22 @@
+{
+  "region_name": "alpine_himalayan",
+  "boundaries": 307,
+  "earthquakes": 3347,
+  "strike_slip_count": 1735,
+  "reverse_count": 745,
+  "normal_count": 867,
+  "unknown_count": 0,
+  "near_boundary_count": 1243,
+  "magnitude_avg": 5.268538990140424,
+  "depth_avg": 37.41894233642068,
+  "boundary_types": {
+    ":CCB*": 111,
+    ":OSR": 60,
+    ":CRB": 58,
+    ":CRB*": 31,
+    ":CTF": 25,
+    ":CCB": 13,
+    ":CTF*": 7,
+    ":OTF": 2
+  }
+}

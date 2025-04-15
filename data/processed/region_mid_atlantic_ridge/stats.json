@@ -1,0 +1,18 @@
+{
+  "region_name": "mid_atlantic_ridge",
+  "boundaries": 742,
+  "earthquakes": 2509,
+  "strike_slip_count": 929,
+  "reverse_count": 833,
+  "normal_count": 747,
+  "unknown_count": 0,
+  "near_boundary_count": 2461,
+  "magnitude_avg": 5.046512554802709,
+  "depth_avg": 10.267198086887207,
+  "boundary_types": {
+    ":OSR": 466,
+    "OSR": 178,
+    "OTF": 92,
+    ":OSR*": 6
+  }
+}
