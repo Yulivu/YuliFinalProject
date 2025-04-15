@@ -1,0 +1,17 @@
+{
+  "region_name": "indian_ocean_ridge",
+  "boundaries": 227,
+  "earthquakes": 1342,
+  "strike_slip_count": 513,
+  "reverse_count": 541,
+  "normal_count": 288,
+  "unknown_count": 0,
+  "near_boundary_count": 1201,
+  "magnitude_avg": 5.089269746646795,
+  "depth_avg": 10.510134128166916,
+  "boundary_types": {
+    ":OSR": 94,
+    "OSR": 87,
+    "OTF": 46
+  }
+}
