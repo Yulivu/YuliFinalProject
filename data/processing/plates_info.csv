@@ -1,0 +1,53 @@
+plate_id,plate_name,pole_latitude,pole_longitude,rotation_rate
+AF,Africa,59.16,-73.174,0.927
+AN,Antarctica,64.315,-83.984,0.8695
+SO,Somalia,58.789,-81.637,0.9783
+IN,India,60.494,-30.403,1.1034
+AU,Australia,60.08,1.742,1.0744
+EU,Eurasia,61.066,-85.819,0.8591
+NA,North America,48.709,-78.167,0.7486
+SA,South America,54.999,-85.752,0.6365
+NZ,Nazca,55.578,-90.096,1.3599
+PA,Pacific,0.0,0.0,0.0
+AR,Arabia,59.658,-33.193,1.1616
+SU,Sunda,55.442,-72.955,1.103
+TI,Timor,19.524,112.175,1.514
+KE,Kermadec,47.521,-3.115,2.831
+TO,Tonga,28.807,2.263,9.3
+NI,Niuafo'ou,6.868,-168.868,3.255
+WL,Woodlark,22.134,132.33,1.546
+MO,Maoke,59.589,78.88,0.8927
+SB,South Bismarck,10.61,-32.99,8.44
+SS,Solomon Sea,19.529,135.017,1.478
+NB,North Bismarck,-4.0,139.0,0.33
+NH,New Hebrides,13.0,-12.0,2.7
+CA,Caribbean,54.313,-79.431,0.904
+CO,Cocos,36.823,-108.629,1.9975
+OK,Okhotsk,55.421,-82.859,0.845
+JF,Juan Fernandez,35.0,26.0,0.5068
+AP,Altiplano,33.639,-81.177,0.916
+ND,North Andes,58.664,-89.003,0.7009
+ON,Okinawa,48.351,142.415,2.853
+PS,Philippine Sea,-1.2,-45.8,1.0
+AM,Amur,57.645,-83.736,0.9309
+CL,Caroline,10.13,-45.57,0.309
+MA,Mariana,43.777,149.205,1.278
+FT,Futuna,-10.158,-178.305,4.848
+SC,Scotia,48.625,-81.454,0.6516
+SL,Shetland,63.121,-97.084,0.8558
+AS,Aegean Sea,74.275,-87.237,0.6497
+AT,Anatolia,56.283,8.932,1.64
+YA,Yangtze,69.067,-97.718,0.9983
+BU,Burma,8.894,-75.511,2.667
+RI,Rivera,26.7,-105.2,4.6923
+BH,Balmoral Reef,12.559,87.957,0.3029
+MS,Molucca Sea,11.103,-56.746,4.07
+BS,Banda Sea,16.007,122.442,2.125
+MN,Manus,-3.037,150.456,51.3
+CR,Conway Reef,-12.628,175.127,3.605
+BR,Bering,45.9,-111.0,0.2
+EA,Easter,28.3,66.4,11.4
+JZ,Juan de Fuca,35.91,70.166,22.52
+GP,Galapagos,9.399,79.69,5.275
+SW,Sandwich,-19.019,-39.64,1.84
+PM,Panama,54.058,-90.247,0.9069
