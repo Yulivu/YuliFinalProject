@@ -1,0 +1,30 @@
+{
+  "region_name": "circum_pacific_west",
+  "boundaries": 818,
+  "earthquakes": 13854,
+  "strike_slip_count": 4447,
+  "reverse_count": 4736,
+  "normal_count": 4671,
+  "unknown_count": 0,
+  "near_boundary_count": 9411,
+  "magnitude_avg": 5.326324527212357,
+  "depth_avg": 66.0876786487657,
+  "boundary_types": {
+    ":OCB": 181,
+    ":OSR": 113,
+    ":CTF*": 103,
+    ":OTF": 92,
+    ":CCB*": 70,
+    "CRB": 60,
+    ":CRB": 53,
+    "CTF": 30,
+    ":CTF": 29,
+    ":CCB": 28,
+    ":CRB*": 25,
+    "CCB": 14,
+    "OTF": 8,
+    ":OCB*": 7,
+    "CCB*": 3,
+    "OSR": 2
+  }
+}

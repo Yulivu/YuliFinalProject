@@ -194,7 +194,7 @@ def main():
     #   3. Incorporate Euler pole dataProcess (from plate_poles) to derive relative plate motion features.
     #   4. Explore temporal patterns in seismicity to capture dynamic changes.
     #
-    # These features will be valuable inputs for machine learning models aiming at
+    # These features will be valuable inputs for machine learning model aiming at
     # earthquake fault motion pattern recognition and plate boundary identification.
     print("Exploratory dataProcess analysis completed. Results saved in:", output_dir)
 
