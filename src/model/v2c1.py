@@ -52,6 +52,74 @@ if gpus:
         print(f"GPU设置错误: {e}")
 
 
+def global_pad(data, padding_size):
+    """
+    为全球地理数据实现自定义填充，处理经纬度边界
+
+    Args:
+        data: 输入数据，形状为(channels, height, width)
+        padding_size: 每侧填充的像素数
+
+    Returns:
+        正确处理全球边界的填充数据
+    """
+    channels, height, width = data.shape
+    padded_data = np.zeros((channels, height + 2 * padding_size, width + 2 * padding_size),
+                           dtype=data.dtype)
+
+    # 用原始数据填充中央区域
+    padded_data[:, padding_size:padding_size + height, padding_size:padding_size + width] = data
+
+    # 处理经度边界（东西方向）- 使用环绕填充
+    # 左边界（从右侧复制）
+    padded_data[:, padding_size:padding_size + height, :padding_size] = \
+        data[:, :, -padding_size:]
+
+    # 右边界（从左侧复制）
+    padded_data[:, padding_size:padding_size + height, padding_size + width:] = \
+        data[:, :, :padding_size]
+
+    # 处理纬度边界（南北方向）- 反射填充
+    # 上边界（北极）
+    padded_data[:, :padding_size, padding_size:padding_size + width] = \
+        np.flip(data[:, :padding_size, :], axis=1)
+
+    # 下边界（南极）
+    padded_data[:, padding_size + height:, padding_size:padding_size + width] = \
+        np.flip(data[:, -padding_size:, :], axis=1)
+
+    # 处理四个角落
+    # 左上角
+    padded_data[:, :padding_size, :padding_size] = \
+        np.flip(data[:, :padding_size, -padding_size:], axis=1)
+
+    # 右上角
+    padded_data[:, :padding_size, padding_size + width:] = \
+        np.flip(data[:, :padding_size, :padding_size], axis=1)
+
+    # 左下角
+    padded_data[:, padding_size + height:, :padding_size] = \
+        np.flip(data[:, -padding_size:, -padding_size:], axis=1)
+
+    # 右下角
+    padded_data[:, padding_size + height:, padding_size + width:] = \
+        np.flip(data[:, -padding_size:, :padding_size], axis=1)
+
+    # 调试信息 - 检查填充是否正确
+    if padding_size > 0:
+        # 检查东西方向的连续性
+        left_edge = padded_data[:, padding_size:padding_size + height, 0:padding_size]
+        right_edge = padded_data[:, padding_size:padding_size + height,
+                     padding_size + width - padding_size:padding_size + width]
+        east_west_continuous = np.allclose(left_edge, data[:, :, -padding_size:])
+
+        print(f"东西方向边界连续性检查: {'通过' if east_west_continuous else '失败'}")
+
+    return padded_data
+
+
+
+
 def load_raster_data():
     """加载栅格数据，返回地震特征和板块边界栅格"""
     print("加载栅格数据...")
@@ -409,8 +477,8 @@ def prepare_windowed_data(eq_data, boundary_data, masks, window_size=7):
     val_index_map = {(y, x): i for i, (y, x) in enumerate(zip(val_indices[0], val_indices[1]))}
     test_index_map = {(y, x): i for i, (y, x) in enumerate(zip(test_indices[0], test_indices[1]))}
 
-    # 通过填充边界来扩展数据以减少边缘效应
-    eq_data_padded = np.pad(eq_data, ((0, 0), (half_window, half_window), (half_window, half_window)), mode='reflect')
+    # 使用自定义全球填充来扩展数据，正确处理经纬度边界
+    eq_data_padded = global_pad(eq_data, half_window)
 
     # 填充训练窗口
     print("准备训练样本...")
@@ -757,9 +825,8 @@ def predict_for_test_regions(model, eq_data, masks, splits, window_size=7, batch
     test_indices = np.where(test_mask)
     num_test_pixels = len(test_indices[0])
 
-    # 使用反射填充减少边缘效应
-    eq_data_padded = np.pad(eq_data, ((0, 0), (half_window, half_window),
-                                      (half_window, half_window)), mode='reflect')
+    # 使用自定义全球填充，正确处理经纬度边界
+    eq_data_padded = global_pad(eq_data, half_window)
 
     # 初始化预测数组
     prediction_map = np.zeros((height, width), dtype=np.float32)

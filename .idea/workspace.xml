@@ -5,72 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c67865b6-a46f-4b05-95ce-4f8a6b40524f" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/v2c.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/v2c1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/v3c1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/explore/global_fault_scatter_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/explore/indian_region_scatter_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/explore/pacific_region_scatter_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/explore/plate_boundaries_scatter_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/explore/rake_vs_depth.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/explore/try1/earthquake_counts_by_year.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/explore/try1/earthquake_locations_fault_type.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/explore/try1/fault_type_counts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/explore/try1/mb_distribution.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/explore/try1/plate_boundaries.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/explore/try1/plate_outlines.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/explore/try1/rake1_distribution.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/data_distribution.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/earthquake_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/feature_relationships.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/rake_distribution.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_alpine_himalayan/boundary_grid.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_alpine_himalayan/earthquake_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_alpine_himalayan/fault_type_grids.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_alpine_himalayan/region_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_alpine_himalayan/stats.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_circum_pacific_east/boundary_grid.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_circum_pacific_east/earthquake_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_circum_pacific_east/fault_type_grids.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_circum_pacific_east/region_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_circum_pacific_east/stats.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_circum_pacific_north/boundary_grid.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_circum_pacific_north/earthquake_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_circum_pacific_north/fault_type_grids.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_circum_pacific_north/region_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_circum_pacific_north/stats.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_circum_pacific_west/boundary_grid.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_circum_pacific_west/earthquake_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_circum_pacific_west/fault_type_grids.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_circum_pacific_west/region_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_circum_pacific_west/stats.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_east_african_rift/boundary_grid.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_east_african_rift/earthquake_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_east_african_rift/fault_type_grids.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_east_african_rift/region_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_east_african_rift/stats.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_indian_ocean_ridge/boundary_grid.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_indian_ocean_ridge/earthquake_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_indian_ocean_ridge/fault_type_grids.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_indian_ocean_ridge/region_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_indian_ocean_ridge/stats.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_mid_atlantic_ridge/boundary_grid.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_mid_atlantic_ridge/earthquake_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_mid_atlantic_ridge/fault_type_grids.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_mid_atlantic_ridge/region_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/region_mid_atlantic_ridge/stats.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processing/earthquakes.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processing/plate_boundaries.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processing/plate_poles.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processing/plates.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processing/plates_info.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/analysis/tectonic_data_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/analysis/tectonic_data_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataProcess/generate_dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataProcess/parse_cmt.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataProcess/parse_plates.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250422_112009_architecture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250422_112009_training_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250422_112009_training_history.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_112006/config.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_112006/data_split.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_112006/test_prediction_plate_boundary_model_20250422_112009.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_112006/test_prediction_plate_boundary_model_20250422_112009_heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_112006/test_prediction_plate_boundary_model_20250422_112009_overview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_112006/test_prediction_plate_boundary_model_20250422_112009_region_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_112006/test_prediction_plate_boundary_model_20250422_112009_region_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_112006/test_prediction_plate_boundary_model_20250422_112009_region_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_112006/test_prediction_plate_boundary_model_20250422_112009_region_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_112006/test_prediction_plate_boundary_model_20250422_112009_report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250417_072944.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250417_105714.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250417_112402.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250417_113409.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250422_112009.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/v2c1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/v2c1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,54 +65,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.V2_5_Finalcsv_to_raster.executor&quot;: &quot;Run&quot;,
-    &quot;Python.betterv2dataprocessor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.check.executor&quot;: &quot;Run&quot;,
-    &quot;Python.cnn_models.executor&quot;: &quot;Run&quot;,
-    &quot;Python.csv_to_raster.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dataprocessor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.debugg.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dl.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dnn.executor&quot;: &quot;Run&quot;,
-    &quot;Python.explorev2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.generate_dataset.executor&quot;: &quot;Run&quot;,
-    &quot;Python.globalpre.executor&quot;: &quot;Run&quot;,
-    &quot;Python.goodtry.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.parse_cmt.executor&quot;: &quot;Run&quot;,
-    &quot;Python.parse_plates.executor&quot;: &quot;Run&quot;,
-    &quot;Python.plate_seismic_analysis.executor&quot;: &quot;Run&quot;,
-    &quot;Python.platemotion.executor&quot;: &quot;Run&quot;,
-    &quot;Python.poles.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ptcnn.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rasterize_plate_boundaries.executor&quot;: &quot;Run&quot;,
-    &quot;Python.run_analysis.executor&quot;: &quot;Run&quot;,
-    &quot;Python.staticcheck.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tectonic_data_analysis.executor&quot;: &quot;Run&quot;,
-    &quot;Python.train_cnn.executor&quot;: &quot;Run&quot;,
-    &quot;Python.train_tabular.executor&quot;: &quot;Run&quot;,
-    &quot;Python.v2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.v2BESTdataprocessor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.v2_4_Boundaries_To_Tif.executor&quot;: &quot;Run&quot;,
-    &quot;Python.v2c.executor&quot;: &quot;Run&quot;,
-    &quot;Python.v2c1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.v2cmt.executor&quot;: &quot;Run&quot;,
-    &quot;Python.v2plate.executor&quot;: &quot;Run&quot;,
-    &quot;Python.v2platetry.executor&quot;: &quot;Run&quot;,
-    &quot;Python.v2prepare_training_dataset.executor&quot;: &quot;Run&quot;,
-    &quot;Python.v2processeqfeature2.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.V2_5_Finalcsv_to_raster.executor": "Run",
+    "Python.betterv2dataprocessor.executor": "Run",
+    "Python.check.executor": "Run",
+    "Python.cnn_models.executor": "Run",
+    "Python.csv_to_raster.executor": "Run",
+    "Python.dataprocessor.executor": "Run",
+    "Python.debugg.executor": "Run",
+    "Python.dl.executor": "Run",
+    "Python.dnn.executor": "Run",
+    "Python.explorev2.executor": "Run",
+    "Python.generate_dataset.executor": "Run",
+    "Python.globalpre.executor": "Run",
+    "Python.goodtry.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.parse_cmt.executor": "Run",
+    "Python.parse_plates.executor": "Run",
+    "Python.plate_seismic_analysis.executor": "Run",
+    "Python.platemotion.executor": "Run",
+    "Python.poles.executor": "Run",
+    "Python.ptcnn.executor": "Run",
+    "Python.rasterize_plate_boundaries.executor": "Run",
+    "Python.run_analysis.executor": "Run",
+    "Python.staticcheck.executor": "Run",
+    "Python.tectonic_data_analysis.executor": "Run",
+    "Python.train_cnn.executor": "Run",
+    "Python.train_tabular.executor": "Run",
+    "Python.v2.executor": "Run",
+    "Python.v2BESTdataprocessor.executor": "Run",
+    "Python.v2_4_Boundaries_To_Tif.executor": "Run",
+    "Python.v2c.executor": "Run",
+    "Python.v2c1.executor": "Run",
+    "Python.v2cmt.executor": "Run",
+    "Python.v2plate.executor": "Run",
+    "Python.v2platetry.executor": "Run",
+    "Python.v2prepare_training_dataset.executor": "Run",
+    "Python.v2processeqfeature2.executor": "Run",
+    "Python.v3c1.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\debuf\Desktop\YuliFinalProject\src\dataProcess\forV2" />
@@ -213,7 +169,8 @@
       <workItem from="1744864543734" duration="566000" />
       <workItem from="1744865120245" duration="14384000" />
       <workItem from="1745085750644" duration="1954000" />
-      <workItem from="1745307531234" duration="3855000" />
+      <workItem from="1745307531234" duration="5894000" />
+      <workItem from="1745318515389" duration="5449000" />
     </task>
     <servers />
   </component>
@@ -223,7 +180,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/YuliFinalProject$dl.coverage" NAME="dl 覆盖结果" MODIFIED="1744693147891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$cnn_models.coverage" NAME="cnn_models 覆盖结果" MODIFIED="1744736068900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/model" />
-    <SUITE FILE_PATH="coverage/YuliFinalProject$v2c1.coverage" NAME="v2c1 覆盖结果" MODIFIED="1745313602765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/model" />
+    <SUITE FILE_PATH="coverage/YuliFinalProject$v2c1.coverage" NAME="v2c1 覆盖结果" MODIFIED="1745318657036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/model" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$train_cnn.coverage" NAME="train_cnn 覆盖结果" MODIFIED="1744728726045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$check.coverage" NAME="check 覆盖结果" MODIFIED="1744808123969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$v2prepare_training_dataset.coverage" NAME="v2prepare_training_dataset 覆盖结果" MODIFIED="1744820420088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
@@ -241,6 +198,7 @@
     <SUITE FILE_PATH="coverage/YuliFinalProject$V2_5_Finalcsv_to_raster.coverage" NAME="V2_5_Finalcsv_to_raster 覆盖结果" MODIFIED="1745309537129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$csv_to_raster.coverage" NAME="csv_to_raster 覆盖结果" MODIFIED="1744828780934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$tectonic_data_analysis.coverage" NAME="tectonic_data_analysis 覆盖结果" MODIFIED="1744714856346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/analysis" />
+    <SUITE FILE_PATH="coverage/YuliFinalProject$v3c1.coverage" NAME="v3c1 覆盖结果" MODIFIED="1745322752789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/model" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$explorev2.coverage" NAME="explorev2 覆盖结果" MODIFIED="1744785245444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$poles.coverage" NAME="poles 覆盖结果" MODIFIED="1744787946900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$train_tabular.coverage" NAME="train_tabular 覆盖结果" MODIFIED="1744728712822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
@@ -251,7 +209,7 @@
     <SUITE FILE_PATH="coverage/YuliFinalProject$v2.coverage" NAME="v2 覆盖结果" MODIFIED="1744824810557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/model" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$dataprocessor.coverage" NAME="dataprocessor 覆盖结果" MODIFIED="1744794226268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$v2plate.coverage" NAME="v2plate 覆盖结果" MODIFIED="1744788610679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
-    <SUITE FILE_PATH="coverage/YuliFinalProject$main.coverage" NAME="main 覆盖结果" MODIFIED="1744865422791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/YuliFinalProject$main.coverage" NAME="main 覆盖结果" MODIFIED="1745318637202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$plate_seismic_analysis.coverage" NAME="plate_seismic_analysis 覆盖结果" MODIFIED="1744704819739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/analysis" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$v2BESTdataprocessor.coverage" NAME="v2BESTdataprocessor 覆盖结果" MODIFIED="1744810472860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$run_analysis.coverage" NAME="run_analysis 覆盖结果" MODIFIED="1744702525675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/analysis" />
