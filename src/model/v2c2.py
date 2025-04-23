@@ -104,9 +104,19 @@ def load_raster_data():
     eq_data = eq_data[:, :min_height, :min_width]
     boundary_data = boundary_data[:, :min_height, :min_width]
 
-    print(f"地震特征栅格形状: {eq_data.shape}, 板块边界栅格形状: {boundary_data.shape}")
+    # 应用变换：顺时针旋转180度并水平翻转
+    transformed_eq_data = np.zeros_like(eq_data)
+    transformed_boundary_data = np.zeros_like(boundary_data)
+    
+    for i in range(eq_data.shape[0]):
+        transformed_eq_data[i] = np.fliplr(np.rot90(eq_data[i], k=2))
+    
+    for i in range(boundary_data.shape[0]):
+        transformed_boundary_data[i] = np.fliplr(np.rot90(boundary_data[i], k=2))
 
-    return eq_data, boundary_data, eq_meta, eq_transform, eq_crs
+    print(f"地震特征栅格形状: {transformed_eq_data.shape}, 板块边界栅格形状: {transformed_boundary_data.shape}")
+
+    return transformed_eq_data, transformed_boundary_data, eq_meta, eq_transform, eq_crs
 
 
 def define_geological_regions(eq_data, boundary_data, n_regions_h=4, n_regions_w=4, random_state=42):
@@ -264,18 +274,29 @@ def visualize_data_split(masks, splits, output_path):
     colors = ['#4363d8', '#42d4f4', '#f58231']  # 蓝色=训练, 青色=验证, 橙色=测试
     cmap = LinearSegmentedColormap.from_list('split_cmap', colors, N=3)
 
+    # 旋转180度并水平翻转图像
+    split_type_mask_transformed = np.rot90(split_type_mask, k=2)  # 旋转180度
+    split_type_mask_transformed = np.fliplr(split_type_mask_transformed)  # 水平翻转
+
     # 创建图像
     plt.figure(figsize=(12, 9))
-    plt.imshow(split_type_mask, cmap=cmap, interpolation='nearest')
+    plt.imshow(split_type_mask_transformed, cmap=cmap, interpolation='nearest')
 
     # 添加区域边界和标签
     for region_id, stats in region_stats.items():
         y_start, y_end = stats['h_start'], stats['h_end']
         x_start, x_end = stats['w_start'], stats['w_end']
         
+        # 变换区域坐标
+        height, width = split_type_mask.shape
+        y_start_transformed = height - y_end
+        y_end_transformed = height - y_start
+        x_start_transformed = width - x_end
+        x_end_transformed = width - x_start
+        
         # 绘制边界
-        plt.plot([x_start, x_end, x_end, x_start, x_start],
-                 [y_start, y_start, y_end, y_end, y_start],
+        plt.plot([x_start_transformed, x_end_transformed, x_end_transformed, x_start_transformed, x_start_transformed],
+                 [y_start_transformed, y_start_transformed, y_end_transformed, y_end_transformed, y_start_transformed],
                  'k-', linewidth=0.8, alpha=0.6)
         
         # 确定区域类型和文本颜色
@@ -286,10 +307,10 @@ def visualize_data_split(masks, splits, output_path):
         else:
             region_type, text_color = "Train", 'white'
             
-        # 添加标签
-        center_y = (stats['h_start'] + stats['h_end']) // 2
-        center_x = (stats['w_start'] + stats['w_end']) // 2
-        plt.text(center_x, center_y, f"R{region_id}\n{region_type}\n{stats['boundary_percentage']:.1f}%",
+        # 添加标签 - 计算变换后的中心点
+        center_y_transformed = (y_start_transformed + y_end_transformed) // 2
+        center_x_transformed = (x_start_transformed + x_end_transformed) // 2
+        plt.text(center_x_transformed, center_y_transformed, f"R{region_id}\n{region_type}\n{stats['boundary_percentage']:.1f}%",
                  color=text_color, ha='center', va='center', fontweight='bold', fontsize=9)
 
     # 添加图例
@@ -593,6 +614,8 @@ def predict_for_test_regions(model, eq_data, masks, splits, window_size=7, batch
     for i, (y, x) in enumerate(zip(test_indices[0], test_indices[1])):
         prediction_map[y, x] = all_predictions[i, 0]
 
+    # 注意：不再需要旋转和翻转，因为输入数据已经完成了变换
+
     print("测试区域预测完成")
     return prediction_map
 
@@ -659,6 +682,9 @@ def visualize_test_predictions(prediction_map, boundary_data, masks, splits, eq_
     prediction_cmap = LinearSegmentedColormap.from_list('prediction_cmap', 
                                                         ['navy', 'deepskyblue', 'gold'], N=256)
 
+    # 获取形状尺寸 - 注意：由于数据已经在load_raster_data中变换，这里不需要再做变换
+    height, width = test_mask.shape
+
     # 创建整体测试区域预测对比图
     plt.figure(figsize=(16, 12))
     
@@ -687,6 +713,7 @@ def visualize_test_predictions(prediction_map, boundary_data, masks, splits, eq_
         stats = region_stats[region_id]
         y_start, y_end = stats['h_start'], stats['h_end']
         x_start, x_end = stats['w_start'], stats['w_end']
+        
         plt.plot([x_start, x_end, x_end, x_start, x_start],
                  [y_start, y_start, y_end, y_end, y_start],
                  'y-', linewidth=2, alpha=0.7)

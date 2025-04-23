@@ -2,6 +2,7 @@ import os
 import numpy as np
 import pandas as pd
 import rasterio
+import geopandas as gpd
 from affine import Affine
 
 # ---------------------- 参数设置 ----------------------
@@ -9,12 +10,20 @@ from affine import Affine
 csv_path = r"C:\Users\debuf\Desktop\YuliFinalProject\data\v2_processing\v2better\earthquake_features_processed.csv"
 # 输出多通道 tif 文件，与 plate_boundaries 栅格在同一文件夹
 output_tif = r"C:\Users\debuf\Desktop\YuliFinalProject\data\v2processed\earthquake_features_raster.tif"
+# plate_boundaries shapefile 路径（用于获取相同的空间范围）
+plate_shp = r"C:\Users\debuf\Desktop\YuliFinalProject\data\v2raw\plate\plate_boundaries.shp"
+
+# ---------------------- 读取 plate_boundaries 获取相同范围 ----------------------
+print("读取 plate_boundaries.shp 以获取空间范围...")
+gdf = gpd.read_file(plate_shp)
+data_bounds = gdf.total_bounds
+minx, miny, maxx, maxy = data_bounds
+print(f"数据范围: 经度 {minx} 到 {maxx}, 纬度 {miny} 到 {maxy}")
 
 # ---------------------- 全局范围与分辨率 ----------------------
-minx, miny, maxx, maxy = -180.0, -90.0, 180.0, 90.0
 resolution = 1.5
-width = int((maxx - minx) / resolution)    # 360
-height = int((maxy - miny) / resolution)   # 180
+width = int((maxx - minx) / resolution)
+height = int((maxy - miny) / resolution)
 
 print(f"网格范围：经度({minx}, {maxx}), 纬度({miny}, {maxy})")
 print(f"生成栅格的尺寸：宽度 = {width}, 高度 = {height}")
@@ -86,7 +95,7 @@ with rasterio.open(
     width=width,
     count=n_channels,
     dtype=channels_sum.dtype,
-    crs="EPSG:4326",
+    crs=gdf.crs,  # 使用与 plate_boundaries 相同的坐标系统
     transform=transform,
 ) as dst:
     for i in range(n_channels):

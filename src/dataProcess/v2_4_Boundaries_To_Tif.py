@@ -18,14 +18,15 @@ print("读取 plate_boundaries.shp ...")
 gdf = gpd.read_file(input_shp)
 print(f"读取到 {len(gdf)} 条边界记录")
 
-# 固定全局经纬度范围
-minx, miny, maxx, maxy = -180.0, -90.0, 180.0, 90.0
-print("手动设置范围：", minx, miny, maxx, maxy)
+# 获取原始数据的范围
+data_bounds = gdf.total_bounds
+minx, miny, maxx, maxy = data_bounds
+print(f"原始数据范围: 经度 {minx} 到 {maxx}, 纬度 {miny} 到 {maxy}")
 
 # 设置栅格分辨率
 resolution = 1.5
-width = int((maxx - minx) / resolution)    # 360
-height = int((maxy - miny) / resolution)   # 180
+width = int((maxx - minx) / resolution)
+height = int((maxy - miny) / resolution)
 
 print("生成栅格的尺寸：宽度 =", width, "高度 =", height)
 
