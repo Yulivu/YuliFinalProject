@@ -6,146 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="c67865b6-a46f-4b05-95ce-4f8a6b40524f" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/explore/global_fault_scatter_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/explore/indian_region_scatter_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/explore/pacific_region_scatter_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/explore/plate_boundaries_scatter_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/explore/rake_vs_depth.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/explore/try1/earthquake_counts_by_year.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/explore/try1/earthquake_locations_fault_type.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/explore/try1/fault_type_counts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/explore/try1/mb_distribution.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/explore/try1/plate_boundaries.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/explore/try1/plate_outlines.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/explore/try1/rake1_distribution.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/data_distribution.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/earthquake_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/feature_relationships.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/rake_distribution.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_alpine_himalayan/boundary_grid.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_alpine_himalayan/earthquake_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_alpine_himalayan/fault_type_grids.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_alpine_himalayan/region_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_alpine_himalayan/stats.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_circum_pacific_east/boundary_grid.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_circum_pacific_east/earthquake_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_circum_pacific_east/fault_type_grids.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_circum_pacific_east/region_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_circum_pacific_east/stats.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_circum_pacific_north/boundary_grid.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_circum_pacific_north/earthquake_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_circum_pacific_north/fault_type_grids.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_circum_pacific_north/region_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_circum_pacific_north/stats.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_circum_pacific_west/boundary_grid.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_circum_pacific_west/earthquake_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_circum_pacific_west/fault_type_grids.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_circum_pacific_west/region_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_circum_pacific_west/stats.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_east_african_rift/boundary_grid.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_east_african_rift/earthquake_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_east_african_rift/fault_type_grids.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_east_african_rift/region_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_east_african_rift/stats.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_indian_ocean_ridge/boundary_grid.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_indian_ocean_ridge/earthquake_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_indian_ocean_ridge/fault_type_grids.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_indian_ocean_ridge/region_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_indian_ocean_ridge/stats.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_mid_atlantic_ridge/boundary_grid.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_mid_atlantic_ridge/earthquake_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_mid_atlantic_ridge/fault_type_grids.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_mid_atlantic_ridge/region_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processed/region_mid_atlantic_ridge/stats.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processing/earthquakes.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processing/plate_boundaries.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processing/plate_poles.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processing/plates.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BadVersions/processing/plates_info.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/v2_processing/v2better - 副本/boundary_distance_distribution.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/v2_processing/v2better - 副本/boundary_type_distribution.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/v2_processing/v2better - 副本/depth_distribution.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/v2_processing/v2better - 副本/earthquake_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/v2_processing/v2better - 副本/earthquake_features.gpkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/v2_processing/v2better - 副本/fault_boundary_crosstab.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/v2_processing/v2better - 副本/fault_boundary_relationship.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/v2_processing/v2better - 副本/fault_type_distribution.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/v2_processing/v2better - 副本/strike_boundary_angle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/v2processed/earthquake_features_raster.tif" beforeDir="false" afterPath="$PROJECT_DIR$/data/v2processed/earthquake_features_raster.tif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/v2processed/plate_boundaries_raster.tif" beforeDir="false" afterPath="$PROJECT_DIR$/data/v2processed/plate_boundaries_raster.tif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/plate_boundary_model_20250422_140605/train/events.out.tfevents.1745323566.YULI.16216.0.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/plate_boundary_model_20250422_140605/validation/events.out.tfevents.1745323574.YULI.16216.1.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/plate_boundary_model_20250422_141100/train/events.out.tfevents.1745323861.YULI.16640.0.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/plate_boundary_model_20250422_141100/validation/events.out.tfevents.1745323869.YULI.16640.1.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/plate_boundary_model_20250422_142236/train/events.out.tfevents.1745324557.YULI.15336.0.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/plate_boundary_model_20250422_142732/train/events.out.tfevents.1745324853.YULI.14836.0.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/plate_boundary_model_20250422_142732/validation/events.out.tfevents.1745324861.YULI.14836.1.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/plate_boundary_model_20250422_145357/train/events.out.tfevents.1745326438.YULI.7728.0.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/plate_boundary_model_20250422_145357/validation/events.out.tfevents.1745326445.YULI.7728.1.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250422_140605_architecture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250422_140605_training_history.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250422_140605_training_history.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250422_141100_architecture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250422_141100_training_history.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250422_141100_training_history.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250422_142236_architecture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250422_142732_architecture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250422_145049_architecture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250422_145357_architecture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250422_151229_training_history.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250422_151229_training_history.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250422_172815_training_history.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250422_172815_training_history.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_140602/config.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_140602/data_split.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_140602/test_prediction_plate_boundary_model_20250422_140605.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_140602/test_prediction_plate_boundary_model_20250422_140605_heatmap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_140602/test_prediction_plate_boundary_model_20250422_140605_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_140602/test_prediction_plate_boundary_model_20250422_140605_region_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_140602/test_prediction_plate_boundary_model_20250422_140605_region_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_140602/test_prediction_plate_boundary_model_20250422_140605_region_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_140602/test_prediction_plate_boundary_model_20250422_140605_region_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_140602/test_prediction_plate_boundary_model_20250422_140605_report.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_141058/config.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_141058/data_split.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_141058/test_prediction_plate_boundary_model_20250422_141100.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_141058/test_prediction_plate_boundary_model_20250422_141100_heatmap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_141058/test_prediction_plate_boundary_model_20250422_141100_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_141058/test_prediction_plate_boundary_model_20250422_141100_region_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_141058/test_prediction_plate_boundary_model_20250422_141100_region_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_141058/test_prediction_plate_boundary_model_20250422_141100_region_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_141058/test_prediction_plate_boundary_model_20250422_141100_region_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_141058/test_prediction_plate_boundary_model_20250422_141100_report.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_144046/data_split.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_145046/data_split.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_145355/data_split.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_151226/config.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_151226/data_split.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_151226/test_prediction_plate_boundary_model_20250422_151229.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_151226/test_prediction_plate_boundary_model_20250422_151229_heatmap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_151226/test_prediction_plate_boundary_model_20250422_151229_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_151226/test_prediction_plate_boundary_model_20250422_151229_report.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_172813/config.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_172813/data_split.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_172813/test_prediction_plate_boundary_model_20250422_172815.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_172813/test_prediction_plate_boundary_model_20250422_172815_heatmap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_172813/test_prediction_plate_boundary_model_20250422_172815_overview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_172813/test_prediction_plate_boundary_model_20250422_172815_region_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_172813/test_prediction_plate_boundary_model_20250422_172815_region_10_heatmap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_172813/test_prediction_plate_boundary_model_20250422_172815_region_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_172813/test_prediction_plate_boundary_model_20250422_172815_region_11_heatmap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_172813/test_prediction_plate_boundary_model_20250422_172815_region_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_172813/test_prediction_plate_boundary_model_20250422_172815_region_12_heatmap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_172813/test_prediction_plate_boundary_model_20250422_172815_region_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_172813/test_prediction_plate_boundary_model_20250422_172815_region_13_heatmap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v2c1/run_20250422_172813/test_prediction_plate_boundary_model_20250422_172815_report.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataProcess/V2_5_Finalcsv_to_raster.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataProcess/V2_5_Finalcsv_to_raster.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataProcess/v2_4_Boundaries_To_Tif.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataProcess/v2_4_Boundaries_To_Tif.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250422_151229.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250422_172815.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/v2c1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/v2c1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/v2c2.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/v2c2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/optimized_resnet_plate_boundary_model_20250422_205649.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250423_111753.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250423_115312.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250423_120206.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250423_120549.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250423_121414.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250423_122238.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/resnet18_model_20250422_200455.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/resnet18_model_20250422_202958.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/resnet18_simple_20250422_212558.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/resnet_plate_boundary_model_20250423_110510.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/unet_boundary_model_20250423_112828.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/unet_boundary_model_20250423_113636.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/unet_boundary_model_20250423_114331.h5" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,57 +59,57 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.V2_5_Finalcsv_to_raster.executor": "Run",
-    "Python.betterv2dataprocessor.executor": "Run",
-    "Python.check.executor": "Run",
-    "Python.cnn_models.executor": "Run",
-    "Python.csv_to_raster.executor": "Run",
-    "Python.dataprocessor.executor": "Run",
-    "Python.debugg.executor": "Run",
-    "Python.dl.executor": "Run",
-    "Python.dnn.executor": "Run",
-    "Python.explorev2.executor": "Run",
-    "Python.generate_dataset.executor": "Run",
-    "Python.globalpre.executor": "Run",
-    "Python.goodtry.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.parse_cmt.executor": "Run",
-    "Python.parse_plates.executor": "Run",
-    "Python.plate_seismic_analysis.executor": "Run",
-    "Python.platemotion.executor": "Run",
-    "Python.poles.executor": "Run",
-    "Python.ptcnn.executor": "Run",
-    "Python.rasterize_plate_boundaries.executor": "Run",
-    "Python.run_analysis.executor": "Run",
-    "Python.staticcheck.executor": "Run",
-    "Python.tectonic_data_analysis.executor": "Run",
-    "Python.train_cnn.executor": "Run",
-    "Python.train_tabular.executor": "Run",
-    "Python.v2.executor": "Run",
-    "Python.v2BESTdataprocessor.executor": "Run",
-    "Python.v2_4_Boundaries_To_Tif.executor": "Run",
-    "Python.v2c.executor": "Run",
-    "Python.v2c1.executor": "Run",
-    "Python.v2c2.executor": "Run",
-    "Python.v2cmt.executor": "Run",
-    "Python.v2plate.executor": "Run",
-    "Python.v2platetry.executor": "Run",
-    "Python.v2prepare_training_dataset.executor": "Run",
-    "Python.v2processeqfeature2.executor": "Run",
-    "Python.v3c1.executor": "Run",
-    "Python.v3c3.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.V2_5_Finalcsv_to_raster.executor&quot;: &quot;Run&quot;,
+    &quot;Python.betterv2dataprocessor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.check.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cnn_models.executor&quot;: &quot;Run&quot;,
+    &quot;Python.csv_to_raster.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dataprocessor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.debugg.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dl.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dnn.executor&quot;: &quot;Run&quot;,
+    &quot;Python.explorev2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.generate_dataset.executor&quot;: &quot;Run&quot;,
+    &quot;Python.globalpre.executor&quot;: &quot;Run&quot;,
+    &quot;Python.goodtry.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.parse_cmt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.parse_plates.executor&quot;: &quot;Run&quot;,
+    &quot;Python.plate_seismic_analysis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.platemotion.executor&quot;: &quot;Run&quot;,
+    &quot;Python.poles.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ptcnn.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rasterize_plate_boundaries.executor&quot;: &quot;Run&quot;,
+    &quot;Python.run_analysis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.staticcheck.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tectonic_data_analysis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.train_cnn.executor&quot;: &quot;Run&quot;,
+    &quot;Python.train_tabular.executor&quot;: &quot;Run&quot;,
+    &quot;Python.v2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.v2BESTdataprocessor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.v2_4_Boundaries_To_Tif.executor&quot;: &quot;Run&quot;,
+    &quot;Python.v2c.executor&quot;: &quot;Run&quot;,
+    &quot;Python.v2c1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.v2c2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.v2cmt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.v2plate.executor&quot;: &quot;Run&quot;,
+    &quot;Python.v2platetry.executor&quot;: &quot;Run&quot;,
+    &quot;Python.v2prepare_training_dataset.executor&quot;: &quot;Run&quot;,
+    &quot;Python.v2processeqfeature2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.v3c1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.v3c3.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\debuf\Desktop\YuliFinalProject\src\dataProcess\forV2" />
@@ -297,6 +171,7 @@
       <workItem from="1745348167952" duration="1762000" />
       <workItem from="1745349998248" duration="69000" />
       <workItem from="1745398399764" duration="2854000" />
+      <workItem from="1745403889351" duration="344000" />
     </task>
     <servers />
   </component>
