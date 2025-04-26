@@ -506,41 +506,17 @@ def build_unet_model(input_shape, dropout_rate=0.3):
     up_conv2 = layers.BatchNormalization()(up_conv2)
     up_conv2 = layers.Dropout(dropout_rate / 2)(up_conv2)
     
-    # Level 1 up - 解决形状不匹配问题
-    # 打印形状以便调试
+    # Print shapes for debugging
     print(f"Conv1 shape: {conv1.shape}, Up_conv2 shape: {up_conv2.shape}")
     
-    # 使用上采样层，然后使用带填充的卷积调整大小，避免使用Resizing层
+    # Level 1 up - with ResizeLayer to match dimensions exactly
     up1 = layers.UpSampling2D(size=(2, 2))(up_conv2)
-    
-    # 根据形状差异，使用padding='same'和卷积调整大小
-    target_height = 17  # 从错误信息中得到conv1的高度
-    target_width = 17   # 从错误信息中得到conv1的宽度
-    
-    # 如果尺寸仍然不匹配，使用带padding的卷积
     print(f"Up1 after upsampling shape: {up1.shape}")
+    
+    # Use custom Resizing to match exactly
+    target_size = conv1.shape[1:3]
+    up1 = layers.Resizing(target_size[0], target_size[1])(up1)
     up1 = layers.Conv2D(64, (3, 3), activation='relu', padding='same')(up1)
-    
-    # 获取当前形状
-    current_height = up1.shape[1]
-    current_width = up1.shape[2]
-    
-    # 如果形状不匹配，使用裁剪或填充
-    if current_height != target_height or current_width != target_width:
-        # 截取或填充以匹配目标大小
-        if current_height > target_height:
-            diff = current_height - target_height
-            up1 = layers.Cropping2D(cropping=((diff//2, diff - diff//2), (0, 0)))(up1)
-        elif current_height < target_height:
-            diff = target_height - current_height
-            up1 = layers.ZeroPadding2D(padding=((diff//2, diff - diff//2), (0, 0)))(up1)
-            
-        if current_width > target_width:
-            diff = current_width - target_width
-            up1 = layers.Cropping2D(cropping=((0, 0), (diff//2, diff - diff//2)))(up1)
-        elif current_width < target_width:
-            diff = target_width - current_width
-            up1 = layers.ZeroPadding2D(padding=((0, 0), (diff//2, diff - diff//2)))(up1)
     
     print(f"After adjustments - Conv1 shape: {conv1.shape}, Up1 shape: {up1.shape}")
     
@@ -578,6 +554,34 @@ def weighted_binary_crossentropy(pos_weight):
         loss_neg = -(1 - y_true) * tf.math.log(1 - y_pred)
         return tf.reduce_mean(loss_pos + loss_neg)
     return loss
+
+
+def improved_postprocessing(prediction_map, threshold=0.5):
+    """Enhanced post-processing strategy for better boundary continuity"""
+    # Basic binarization
+    binary_prediction = (prediction_map >= threshold).astype(np.uint8)
+    
+    # First remove small noise points
+    binary_prediction = ndimage.binary_opening(binary_prediction, structure=np.ones((3, 3)))
+    
+    # Then connect close areas
+    binary_prediction = ndimage.binary_closing(binary_prediction, structure=np.ones((5, 5)))
+    
+    # Remove small regions
+    labeled_array, num_features = ndimage.label(binary_prediction)
+    component_sizes = np.bincount(labeled_array.ravel())
+    small_size = 10  # Adjust according to data
+    too_small = component_sizes < small_size
+    too_small[0] = False  # Keep background
+    binary_prediction = ~np.isin(labeled_array, np.where(too_small))
+    
+    # Another closing operation to fill gaps in boundaries
+    binary_prediction = ndimage.binary_closing(binary_prediction, structure=np.ones((3, 3)))
+    
+    # Finally thin the boundaries for better precision
+    binary_prediction = ndimage.binary_erosion(binary_prediction, structure=np.ones((2, 2)))
+    
+    return binary_prediction.astype(np.uint8)
 
 
 def train_and_evaluate(X_train, X_val, y_train, y_val, pos_weight=1.0,
@@ -795,12 +799,8 @@ def visualize_test_predictions(prediction_map, boundary_data, masks, splits, eq_
     region_mask = masks['region']
     region_stats = splits['region_stats']
 
-    # Binarize prediction
-    binary_prediction = (prediction_map >= threshold).astype(np.uint8)
-
-    # Post-processing: apply morphological operations to clean up noise
-    binary_prediction = ndimage.binary_opening(binary_prediction, structure=np.ones((3, 3)))
-    binary_prediction = ndimage.binary_closing(binary_prediction, structure=np.ones((3, 3)))
+    # Apply improved post-processing to prediction map for better boundary continuity
+    binary_prediction = improved_postprocessing(prediction_map, threshold)
 
     # Extract contours
     contours = measure.find_contours(prediction_map, threshold)
@@ -808,7 +808,7 @@ def visualize_test_predictions(prediction_map, boundary_data, masks, splits, eq_
     # Calculate performance metrics for test region
     test_indices = np.where(test_mask)
     test_true = (boundary_data[0][test_indices] > 0).astype(np.int32)
-    test_pred = (prediction_map[test_indices] >= threshold).astype(np.int32)
+    test_pred = binary_prediction[test_indices].astype(np.int32)  # Use post-processed prediction
 
     # Calculate precision, recall, and F1
     true_positives = np.sum((test_true == 1) & (test_pred == 1))
@@ -879,7 +879,7 @@ def visualize_test_predictions(prediction_map, boundary_data, masks, splits, eq_
                  [y_start, y_start, y_end, y_end, y_start],
                  'y-', linewidth=2, alpha=0.7)
 
-    plt.title(f'Test Region Evaluation - Precision: {precision:.3f}, Recall: {recall:.3f}, F1: {f1:.3f}', 
+    plt.title(f'Test Region Evaluation - Enhanced Processing - Precision: {precision:.3f}, Recall: {recall:.3f}, F1: {f1:.3f}', 
               fontsize=14)
 
     # Add legend
@@ -907,7 +907,7 @@ def visualize_test_predictions(prediction_map, boundary_data, masks, splits, eq_
         if any(test_mask[y, x] for y, x in contour_points):
             plt.plot(contour[:, 1], contour[:, 0], 'r-', linewidth=1.5)
     
-    plt.title('Test Region Prediction Heatmap', fontsize=14)
+    plt.title('Test Region Prediction Heatmap - Enhanced Model', fontsize=14)
     plt.colorbar(label='Prediction Probability')
     plt.tight_layout()
     plt.savefig(f"{output_path_prefix}_heatmap.png", dpi=300)
@@ -932,7 +932,7 @@ def visualize_test_predictions(prediction_map, boundary_data, masks, splits, eq_
         # Calculate region performance metrics
         region_indices = np.where(region_test_mask)
         region_true = (boundary_data[0][region_indices] > 0).astype(np.int32)
-        region_pred = (prediction_map[region_indices] >= threshold).astype(np.int32)
+        region_pred = binary_prediction[region_indices].astype(np.int32)  # Use post-processed prediction
         
         region_tp = np.sum((region_true == 1) & (region_pred == 1))
         region_fp = np.sum((region_true == 0) & (region_pred == 1))
@@ -957,6 +957,7 @@ def visualize_test_predictions(prediction_map, boundary_data, masks, splits, eq_
         plt.imshow(region_original, cmap=boundary_cmap, alpha=0.7, vmin=0, vmax=1)
         
         # Get contours in region
+        region_binary = binary_prediction[y_start:y_end, x_start:x_end]
         region_contours = measure.find_contours(region_pred_data, threshold)
         for contour in region_contours:
             y_contour = contour[:, 0]
@@ -969,7 +970,7 @@ def visualize_test_predictions(prediction_map, boundary_data, masks, splits, eq_
             if contour_in_test:
                 plt.plot(x_contour, y_contour, 'b-', linewidth=1.5)
                 
-        plt.title(f'Region {region_id} - Boundary: {stats["boundary_percentage"]:.1f}%\n'
+        plt.title(f'Region {region_id} - Boundary: {stats["boundary_percentage"]:.1f}% - Enhanced Processing\n'
                  f'Precision: {region_precision:.3f}, Recall: {region_recall:.3f}, F1: {region_f1:.3f}')
         
         plt.tight_layout()
@@ -993,7 +994,7 @@ def visualize_test_predictions(prediction_map, boundary_data, masks, splits, eq_
                 plt.plot(contour[:, 1], contour[:, 0], 'r-', linewidth=1.5)
                 
         plt.colorbar(label='Prediction Probability')
-        plt.title(f'Region {region_id} - Prediction Heatmap')
+        plt.title(f'Region {region_id} - Enhanced Model - Prediction Heatmap')
         plt.tight_layout()
         plt.savefig(f"{output_path_prefix}_region_{region_id}_heatmap.png", dpi=300)
         plt.close()
@@ -1033,7 +1034,7 @@ def main():
     visualize_data_split(masks, splits, os.path.join(run_output_dir, "data_split.png"))
 
     # Prepare windowed data - UNet mode (patch_mode=True)
-    window_size = 17  # Larger window size for UNet to capture more context
+    window_size = 33  # Increased window size from 17 to 33 to capture more context
     X_train, X_val, X_test, y_train, y_val, y_test, pos_weight, indices_mapping = prepare_windowed_data(
         eq_data, boundary_data, masks, window_size, patch_mode=True)
 
@@ -1042,7 +1043,7 @@ def main():
         X_train, X_val, y_train, y_val,
         pos_weight=pos_weight,
         epochs=100,  # Increase epochs, rely on early stopping
-        batch_size=16,  # Smaller batch size since patches are larger
+        batch_size=8,  # Smaller batch size due to larger window size (33x33)
         patience=15,  # Longer patience value
         patch_mode=True
     )
@@ -1062,6 +1063,14 @@ def main():
     config = {
         'timestamp': timestamp,
         'window_size': window_size,
+        'improved_postprocessing': True,
+        'improvements': [
+            'Increased window size from 17 to 33 for better context',
+            'Enhanced post-processing to reduce fragmentation',
+            'Removed small isolated regions',
+            'Connected close boundaries',
+            'Thinned boundaries for better precision'
+        ],
         'train_regions': len(splits['train_regions']),
         'val_regions': len(splits['val_regions']),
         'test_regions': len(splits['test_regions']),

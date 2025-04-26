@@ -6,20 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c67865b6-a46f-4b05-95ce-4f8a6b40524f" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/optimized_resnet_plate_boundary_model_20250422_205649.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250423_111753.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250423_115312.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250423_120206.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250423_120549.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250423_121414.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/plate_boundary_model_20250423_122238.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/resnet18_model_20250422_200455.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/resnet18_model_20250422_202958.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/resnet18_simple_20250422_212558.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/resnet_plate_boundary_model_20250423_110510.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/unet_boundary_model_20250423_112828.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/unet_boundary_model_20250423_113636.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/unet_boundary_model_20250423_114331.h5" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +157,7 @@
       <workItem from="1745348167952" duration="1762000" />
       <workItem from="1745349998248" duration="69000" />
       <workItem from="1745398399764" duration="2854000" />
-      <workItem from="1745403889351" duration="344000" />
+      <workItem from="1745403889351" duration="684000" />
     </task>
     <servers />
   </component>
