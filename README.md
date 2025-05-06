@@ -4,7 +4,6 @@ This project implements a fully automated deep learning workflow for tectonic pl
 
 ## Main Workflow
 
-> **Note:** The following flowchart uses [Mermaid](https://mermaid-js.github.io/mermaid/#/) syntax. Many platforms (such as GitHub, GitLab, Typora, Obsidian, HackMD, etc.) support Mermaid diagrams in Markdown. If your Markdown viewer does not support Mermaid, you may need to use a compatible editor or render the diagram separately.
 
 ```mermaid
 graph TD
