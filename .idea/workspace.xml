@@ -5,8 +5,89 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c67865b6-a46f-4b05-95ce-4f8a6b40524f" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/v2processed/earthquake_features_raster.tif" beforeDir="false" afterPath="$PROJECT_DIR$/data/v2processed/earthquake_features_raster.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/plate_boundary_detection_v1/confusion_matrix.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/plate_boundary_detection_v1/precision_recall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/plate_boundary_detection_v1/prediction_map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/plate_boundary_detection_v1/training_history.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/plate_boundary_detection_v2/confusion_matrix_test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/plate_boundary_detection_v2/precision_recall_test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/plate_boundary_detection_v2/prediction_map_test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/plate_boundary_detection_v2/training_history.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/random_forest/hybrid_model.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/random_forest/hybrid_training_curve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/random_forest/rf_predicted_boundaries.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/random_forest/rf_predicted_boundaries.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_131256/run_20250423_131256/data_split.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_131501/run_20250423_131501/config.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_131501/run_20250423_131501/data_split.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_131501/run_20250423_131501/test_prediction_unet_plate_boundary_20250423_131503.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_131501/run_20250423_131501/test_prediction_unet_plate_boundary_20250423_131503_heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_131501/run_20250423_131501/test_prediction_unet_plate_boundary_20250423_131503_overview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_131501/run_20250423_131501/test_prediction_unet_plate_boundary_20250423_131503_region_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_131501/run_20250423_131501/test_prediction_unet_plate_boundary_20250423_131503_region_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_131501/run_20250423_131501/test_prediction_unet_plate_boundary_20250423_131503_region_10_heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_131501/run_20250423_131501/test_prediction_unet_plate_boundary_20250423_131503_region_1_heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_131501/run_20250423_131501/test_prediction_unet_plate_boundary_20250423_131503_region_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_131501/run_20250423_131501/test_prediction_unet_plate_boundary_20250423_131503_region_6_heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_131501/run_20250423_131501/test_prediction_unet_plate_boundary_20250423_131503_region_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_131501/run_20250423_131501/test_prediction_unet_plate_boundary_20250423_131503_region_7_heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_131501/run_20250423_131501/test_prediction_unet_plate_boundary_20250423_131503_report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_131501/unet_plate_boundary_20250423_131503_training_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_131501/unet_plate_boundary_20250423_131503_training_history.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/config.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/data_split.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/shapefile_comparison_unet_plate_boundary_20250423_133020.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/shapefile_comparison_unet_plate_boundary_20250423_133020_heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/shapefile_comparison_unet_plate_boundary_20250423_133020_亚太区域.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/shapefile_comparison_unet_plate_boundary_20250423_133020_欧非区域.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/shapefile_comparison_unet_plate_boundary_20250423_133020_美洲区域.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/test_prediction_unet_plate_boundary_20250423_133020.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/test_prediction_unet_plate_boundary_20250423_133020_heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/test_prediction_unet_plate_boundary_20250423_133020_overview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/test_prediction_unet_plate_boundary_20250423_133020_region_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/test_prediction_unet_plate_boundary_20250423_133020_region_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/test_prediction_unet_plate_boundary_20250423_133020_region_10_heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/test_prediction_unet_plate_boundary_20250423_133020_region_1_heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/test_prediction_unet_plate_boundary_20250423_133020_region_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/test_prediction_unet_plate_boundary_20250423_133020_region_6_heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/test_prediction_unet_plate_boundary_20250423_133020_region_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/test_prediction_unet_plate_boundary_20250423_133020_region_7_heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/run_20250423_133018/test_prediction_unet_plate_boundary_20250423_133020_report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/unet_plate_boundary_20250423_133020_training_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_133018/unet_plate_boundary_20250423_133020_training_history.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_141449/run_20250423_141449/config.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_141449/run_20250423_141449/data_split.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_141449/run_20250423_141449/test_prediction_unet_plate_boundary_20250423_141454.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_141449/run_20250423_141449/test_prediction_unet_plate_boundary_20250423_141454_heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_141449/run_20250423_141449/test_prediction_unet_plate_boundary_20250423_141454_region_10_heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_141449/run_20250423_141449/test_prediction_unet_plate_boundary_20250423_141454_region_1_heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_141449/run_20250423_141449/test_prediction_unet_plate_boundary_20250423_141454_region_6_heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_141449/run_20250423_141449/test_prediction_unet_plate_boundary_20250423_141454_region_7_heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_141449/run_20250423_141449/test_prediction_unet_plate_boundary_20250423_141454_report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_141449/unet_plate_boundary_20250423_141454_training_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/unet/Unet_20250423_141449/unet_plate_boundary_20250423_141454_training_history.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c/try1/evaluation_results.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c/try1/geographic_split.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c/try1/predicted_boundaries.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c/try1/prediction_comparison.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c/try1/test_area_evaluation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c/try1/training_history.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250423_111753_training_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250423_111753_training_history.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250423_115312_training_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250423_115312_training_history.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250423_120206_training_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250423_120206_training_history.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250423_120549_training_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250423_120549_training_history.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250423_121414_training_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250423_121414_training_history.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250423_122238_training_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/v2c1/plate_boundary_model_20250423_122238_training_history.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataProcess/V2_5_Finalcsv_to_raster.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataProcess/V2_5_Finalcsv_to_raster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/unet.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +143,8 @@
     &quot;Python.globalpre.executor&quot;: &quot;Run&quot;,
     &quot;Python.goodtry.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.neweva_with_better_unet.executor&quot;: &quot;Run&quot;,
+    &quot;Python.neweval.executor&quot;: &quot;Run&quot;,
     &quot;Python.parse_cmt.executor&quot;: &quot;Run&quot;,
     &quot;Python.parse_plates.executor&quot;: &quot;Run&quot;,
     &quot;Python.plate_seismic_analysis.executor&quot;: &quot;Run&quot;,
@@ -70,12 +153,16 @@
     &quot;Python.ptcnn.executor&quot;: &quot;Run&quot;,
     &quot;Python.rasterize_plate_boundaries.executor&quot;: &quot;Run&quot;,
     &quot;Python.run_analysis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.skeleton.executor&quot;: &quot;Run&quot;,
     &quot;Python.staticcheck.executor&quot;: &quot;Run&quot;,
     &quot;Python.tectonic_data_analysis.executor&quot;: &quot;Run&quot;,
     &quot;Python.train_cnn.executor&quot;: &quot;Run&quot;,
     &quot;Python.train_tabular.executor&quot;: &quot;Run&quot;,
+    &quot;Python.unet1c1.executor&quot;: &quot;Run&quot;,
     &quot;Python.v2.executor&quot;: &quot;Run&quot;,
     &quot;Python.v2BESTdataprocessor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.v2_3_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.v2_3_Improve_features2.executor&quot;: &quot;Run&quot;,
     &quot;Python.v2_4_Boundaries_To_Tif.executor&quot;: &quot;Run&quot;,
     &quot;Python.v2c.executor&quot;: &quot;Run&quot;,
     &quot;Python.v2c1.executor&quot;: &quot;Run&quot;,
@@ -161,6 +248,15 @@
       <workItem from="1745403889351" duration="684000" />
       <workItem from="1745682430251" duration="351000" />
       <workItem from="1745682873786" duration="107000" />
+      <workItem from="1746091874850" duration="19000" />
+      <workItem from="1746437784778" duration="5788000" />
+      <workItem from="1746489552684" duration="88000" />
+      <workItem from="1746489834638" duration="303000" />
+      <workItem from="1746490151951" duration="526000" />
+      <workItem from="1746490747020" duration="334000" />
+      <workItem from="1746491185053" duration="2944000" />
+      <workItem from="1746494152620" duration="677000" />
+      <workItem from="1746518478731" duration="6607000" />
     </task>
     <servers />
   </component>
@@ -170,13 +266,17 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/YuliFinalProject$dl.coverage" NAME="dl 覆盖结果" MODIFIED="1744693147891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$cnn_models.coverage" NAME="cnn_models 覆盖结果" MODIFIED="1744736068900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/model" />
+    <SUITE FILE_PATH="coverage/YuliFinalProject$neweval.coverage" NAME="neweval 覆盖结果" MODIFIED="1746489585087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/model" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$v2c1.coverage" NAME="v2c1 覆盖结果" MODIFIED="1745318657036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/model" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$train_cnn.coverage" NAME="train_cnn 覆盖结果" MODIFIED="1744728726045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$check.coverage" NAME="check 覆盖结果" MODIFIED="1744808123969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$v2prepare_training_dataset.coverage" NAME="v2prepare_training_dataset 覆盖结果" MODIFIED="1744820420088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$goodtry.coverage" NAME="goodtry 覆盖结果" MODIFIED="1744717232430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/analysis" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$rasterize_plate_boundaries.coverage" NAME="rasterize_plate_boundaries 覆盖结果" MODIFIED="1744828764175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
+    <SUITE FILE_PATH="coverage/YuliFinalProject$v2_3_Improve_features2.coverage" NAME="v2_3_Improve_features2 覆盖结果" MODIFIED="1746438278646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$globalpre.coverage" NAME="globalpre 覆盖结果" MODIFIED="1744828386377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/model" />
+    <SUITE FILE_PATH="coverage/YuliFinalProject$unet1c1.coverage" NAME="unet1c1 覆盖结果" MODIFIED="1746439784546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/model" />
+    <SUITE FILE_PATH="coverage/YuliFinalProject$v2_3_1.coverage" NAME="v2_3_1 覆盖结果" MODIFIED="1746518505259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$parse_plates.coverage" NAME="parse_plates 覆盖结果" MODIFIED="1744696405318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/data" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$parse_cmt.coverage" NAME="parse_cmt 覆盖结果" MODIFIED="1744695202980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/data" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$staticcheck.coverage" NAME="staticcheck 覆盖结果" MODIFIED="1744715598439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/analysis" />
@@ -185,7 +285,7 @@
     <SUITE FILE_PATH="coverage/YuliFinalProject$v2_4_Boundaries_To_Tif.coverage" NAME="v2_4_Boundaries_To_Tif 覆盖结果" MODIFIED="1745309532523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$v2cmt.coverage" NAME="v2cmt 覆盖结果" MODIFIED="1744787262904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$platemotion.coverage" NAME="platemotion 覆盖结果" MODIFIED="1744808780382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
-    <SUITE FILE_PATH="coverage/YuliFinalProject$V2_5_Finalcsv_to_raster.coverage" NAME="V2_5_Finalcsv_to_raster 覆盖结果" MODIFIED="1745309537129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
+    <SUITE FILE_PATH="coverage/YuliFinalProject$V2_5_Finalcsv_to_raster.coverage" NAME="V2_5_Finalcsv_to_raster 覆盖结果" MODIFIED="1746439432411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$csv_to_raster.coverage" NAME="csv_to_raster 覆盖结果" MODIFIED="1744828780934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$tectonic_data_analysis.coverage" NAME="tectonic_data_analysis 覆盖结果" MODIFIED="1744714856346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/analysis" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$v3c1.coverage" NAME="v3c1 覆盖结果" MODIFIED="1745322752789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/model" />
@@ -193,12 +293,14 @@
     <SUITE FILE_PATH="coverage/YuliFinalProject$poles.coverage" NAME="poles 覆盖结果" MODIFIED="1744787946900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$train_tabular.coverage" NAME="train_tabular 覆盖结果" MODIFIED="1744728712822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$betterv2dataprocessor.coverage" NAME="betterv2dataprocessor 覆盖结果" MODIFIED="1744809507361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
+    <SUITE FILE_PATH="coverage/YuliFinalProject$skeleton.coverage" NAME="skeleton 覆盖结果" MODIFIED="1746445489468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/model" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$v2processeqfeature2.coverage" NAME="v2processeqfeature2 覆盖结果" MODIFIED="1744823181840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$generate_dataset.coverage" NAME="generate_dataset 覆盖结果" MODIFIED="1744723881458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$ptcnn.coverage" NAME="ptcnn 覆盖结果" MODIFIED="1744779606834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/model" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$v2.coverage" NAME="v2 覆盖结果" MODIFIED="1744824810557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/model" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$dataprocessor.coverage" NAME="dataprocessor 覆盖结果" MODIFIED="1744794226268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$v2plate.coverage" NAME="v2plate 覆盖结果" MODIFIED="1744788610679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/dataProcess" />
+    <SUITE FILE_PATH="coverage/YuliFinalProject$neweva_with_better_unet.coverage" NAME="neweva_with_better_unet 覆盖结果" MODIFIED="1746518716184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/model" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$v3c3.coverage" NAME="v3c3 覆盖结果" MODIFIED="1745398406231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/model" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$v2c2.coverage" NAME="v2c2 覆盖结果" MODIFIED="1745399868920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/model" />
     <SUITE FILE_PATH="coverage/YuliFinalProject$main.coverage" NAME="main 覆盖结果" MODIFIED="1745318637202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

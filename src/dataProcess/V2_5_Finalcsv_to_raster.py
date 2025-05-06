@@ -7,7 +7,7 @@ from affine import Affine
 
 # ---------------------- 参数设置 ----------------------
 # 输入预处理后的 CSV 数据
-csv_path = r"C:\Users\debuf\Desktop\YuliFinalProject\data\v2_processing\v2better\earthquake_features_processed.csv"
+csv_path = r"C:\Users\debuf\Desktop\YuliFinalProject\data\v2_processing\v2better\earthquake_features_enhanced.csv"
 # 输出多通道 tif 文件，与 plate_boundaries 栅格在同一文件夹
 output_tif = r"C:\Users\debuf\Desktop\YuliFinalProject\data\v2processed\earthquake_features_raster.tif"
 # plate_boundaries shapefile 路径（用于获取相同的空间范围）

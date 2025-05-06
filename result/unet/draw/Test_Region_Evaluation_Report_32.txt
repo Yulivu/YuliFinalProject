@@ -1,0 +1,14 @@
+Test Region Evaluation Report
+-----------------------------
+Best Epoch: 6
+Train Loss: 0.0444
+Val Loss: 0.2538
+Train Accuracy: 0.9944
+Val Accuracy: 0.9462
+Train Precision: 0.9854
+Val Precision: 0.7669
+Train Recall: 0.9690
+Val Recall: 0.7389
+Train AUC: 0.9880
+Val AUC: 0.8735
+Model saved to: C:\Users\debuf\Desktop\YuliFinalProject\src\model\models\unet_32_20250506_013740.h5
